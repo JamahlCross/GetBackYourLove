@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>練気闘座</title>
+    <style>
+        body {
+    background-image: url("https://cdn.snsimg.carview.co.jp/minkara/blog/000/https://img.freepik.com/free-photo/vibrant-colors-exploding-futuristic-galaxy-generated-by-ai_188544-16480.jpg?t=st=1715838260~exp=1715841860~hmac=bae856920667608bd675618357ee05ab7f16263af589c3fbab08b7009ea554e6&w=2000031/081/602/31081602/p1.jpg?ct=e8f7e09fda2d");
+    background-color: silver;
+    text-align: center;
+    background-size: cover;
+
+}
+
+button {
+    padding: 10px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.container {
+    background: paleturquoise;
+    max-width: 60%;
+    max-height: auto;
+    margin: auto;
+    padding-bottom: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>愛を取り戻せ！</h1>
+    <p id="shock-el">0</p>
+    <button onclick="shock()">You は Shock</button>
+</div>
+    <script>
+        let count = 0
+function shock(){
+    count += 1
+    document.getElementById("shock-el").textContent = count
+}
+    </script>
+</body>
+</html>
